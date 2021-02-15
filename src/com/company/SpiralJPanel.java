@@ -6,9 +6,9 @@ import javax.swing.JPanel;
 public class SpiralJPanel extends JPanel {
 
     public void paintComponent(Graphics g) {
-        double RADIAN_STEP = 0.25 * Math.PI;
-        int DISTANCE_MIN = 30;
-        int DISTANCE_STEP = 5;
+        double rSTEP = 0.25 * Math.PI;
+        int dMIN = 30;
+        int dSTEP = 5;
         int CENTRE = 150;
         int n = 25;
 
@@ -18,8 +18,8 @@ public class SpiralJPanel extends JPanel {
         int[] y = new int[n];
 
         for (int i = 0; i < n; ++i) {
-            int dist = DISTANCE_MIN + i * DISTANCE_STEP;
-            double rad = i * RADIAN_STEP;
+            int dist = dMIN + i * dSTEP;
+            double rad = i * rSTEP;
             x[i] = (int) (CENTRE + dist * Math.cos(rad));
             y[i] = (int) (CENTRE + dist * Math.sin(rad));
         }

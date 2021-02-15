@@ -9,8 +9,8 @@ public class Main {
         frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
         SpiralJPanel spiralJPanel = new SpiralJPanel();
-        frame.add(spiralJPanel); // add spiralJPanel to frame
-        frame.setSize(350, 350); // set frame size
-        frame.setVisible(true); // display frame
+        frame.add(spiralJPanel);
+        frame.setSize(350, 350);
+        frame.setVisible(true);
     }
 }
